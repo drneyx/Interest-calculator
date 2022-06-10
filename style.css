@@ -1,0 +1,32 @@
+body {
+    background-color:black;
+    font-family:arial;
+    color:white
+}
+h1 {
+    color:grey;
+    font-family:verdana
+}
+.maindiv {
+    background-color:white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items:center;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.input{
+    padding-top: 20px;
+    align-items: flex-start;
+    overflow-x: auto;
+    display:inline-block;margin-right:10px;
+   
+}
+
+.highlight {
+    background-color: yellow;
+  }

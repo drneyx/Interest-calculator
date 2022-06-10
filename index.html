@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+
+      <table cellpadding="5" cellspacing="5" border="0" style="border-collapse: initial;">
+        <tr >
+            <td><label >Amount<label></td>
+            <td ><input type="number"  id="principal"> </td>
+        </tr>
+
+        <tr>
+           <td> <label>Rate</label></td>
+           <td><input   type="range" onchange="updateRate()"  id="rate" min="1" max="20" value="10.25">
+            <span id="rate_val">10.25%</span>  </td>
+        </tr>
+        
+        
+        <tr>
+            <td><label>No. of Years</label></td>
+            <td> <select  id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>     
+            </select></td>
+        
+        </tr>
+
+        <tr>
+         <td><span id="result"></span></td>
+         <td></td>
+        </tr>
+        
+
+        <tr>
+        <td>
+        <button onclick="compute()">Compute Interest</button></td>
+        <td></td>
+        </tr>
+       
+         </table>
+  
+    
+        <footer style="margin-top:20px">
+
+            &#169; This Calculator belongs to Nathan Luvinga
+    
+    
+    </footer>
+</div>
+    </center>
+    </body>
+</html>
